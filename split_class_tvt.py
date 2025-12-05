@@ -1,5 +1,5 @@
 # codigo del splitting para classification, train/val + test
-"""python split_class_tvt.py --input-file preprocessed_tv_tsv.npy --trainval-output tvtsv_trainval_a.npy --test-output tvtsv_test_a.npy --seed 42"""
+
 import numpy as np
 import argparse
 import os

@@ -1,20 +1,5 @@
 """
 Bag-of-Codes + Logistic Regression with (lambda/p)||w||_p^p via ISTA (with backtracking)
-
- python opti_approach.py \
-      --trainval-file tvtsv_trainval_2.npy \
-      --test-file tvtsv_test_2.npy \
-      --label-encoder tvtsv_test_2_label_encoder.npy \
-      --pretrained-model ./models/canelita_full_12/best.pt \
-      --hidden-size 64 \
-      --k 128 \
-      --enc-layernorm \
-      --device cuda \
-      --output-folder ./results/canelita_full_12/boc_ista_results_p_l \
-      --lambda-grid 0,1e-5,3e-5,1e-4,3e-4,1e-3,3e-3,1e-2 \
-      --max-iter 5000 \
-      --k-folds 5
-
 """
 
 import argparse
