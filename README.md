@@ -6,12 +6,7 @@
 
 ## Overview
 
-This repository contains the **optimization component** of a research project on binary arrhythmia classification:
-
-| Class       | Description                                           |
-| ----------- | ----------------------------------------------------- |
-| **VT**      | Ventricular Tachycardia                               |
-| **SVT+BBB** | Supraventricular Tachycardia with Bundle Branch Block |
+This repository contains the **optimization component** of a research project on binary arrhythmia classification: ventricular vs. supraventricular tachycardia with bundle branch block.
 
 The classifier uses **sparse logistic regression** trained via the **Iterative Shrinkage–Thresholding Algorithm (ISTA)**, operating on Bag-of-Codes representations extracted from pretrained VQ-VAE models.
 
