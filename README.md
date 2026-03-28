@@ -2,21 +2,15 @@
 
 > Sparse logistic regression optimized with ISTA to classify ventricular vs. supraventricular tachycardia with bundle branch block from ECG signals.
 
----
-
 ## Overview
 
 This repository contains the **optimization component** of a research project on binary arrhythmia classification: ventricular vs. supraventricular tachycardia with bundle branch block.
 
 The classifier uses **sparse logistic regression** trained via the **Iterative Shrinkage–Thresholding Algorithm (ISTA)**, operating on Bag-of-Codes representations extracted from pretrained VQ-VAE models.
 
----
-
 ## ⚠️ Important Note
 
 Pretrained VQ-VAE models and raw ECG data are **not included**, as they belong to ongoing unpublished research. This repository focuses solely on the **optimization pipeline**.
-
----
 
 ## Repository Structure
 
@@ -28,8 +22,6 @@ Pretrained VQ-VAE models and raw ECG data are **not included**, as they belong t
 ├── split_class_tvt.py     # Train/validation/test split without subject leakage
 └── comparisons/           # Output figures generated from results_opti.py
 ```
-
----
 
 ## Method
 
@@ -46,8 +38,6 @@ The key design choices are:
 - **Sparsity** via L1 regularization, enforced through the ISTA proximal operator
 - **Subject-aware splits** to prevent data leakage across train/validation/test sets
 - **Multi-configuration evaluation** across different VQ-VAE model settings
-
----
 
 ## Usage
 
@@ -68,8 +58,6 @@ python opti_approach.py
 ```python
 python results_opti.py
 ```
-
----
 
 ## License
 
